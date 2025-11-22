@@ -1,4 +1,4 @@
-# Comparación de Algoritmos de Ruta en Grafos
+# 🚀 Comparación de Algoritmos de Ruta en Grafos
 
 **Proyecto de Matemáticas Discretas - Otoño 2025**  
 *Sistema experimental para comparar algoritmos de búsqueda de rutas en grafos ponderados*
@@ -39,21 +39,20 @@ El sistema evalúa métricas como tiempo de ejecución, número de nodos expandi
 ---
 
 ## 📁 Estructura del Proyecto
+```text
 matematicas-discretas/
-├── data/ # Datos de grafos y resultados
-├── docs/ # Documentación
+├── data/               # Datos de grafos y resultados
+├── docs/               # Documentación
 ├── src/
-│ ├── algorithms/ # Implementación de algoritmos
-│ ├── experiments/ # Scripts de experimentación
-│ ├── visualization/ # Código de visualización
-│ └── utils/ # Utilidades comunes
-├── tests/ # Pruebas unitarias
-├── app.py # Aplicación principal Streamlit
-├── requirements.txt # Dependencias
+│   ├── algorithms/     # Implementación de algoritmos
+│   ├── experiments/    # Scripts de experimentación
+│   ├── visualization/  # Código de visualización
+│   └── utils/          # Utilidades comunes
+├── tests/              # Pruebas unitarias
+├── app.py              # Aplicación principal Streamlit
+├── requirements.txt    # Dependencias
 └── README.md
-
-text
-
+```
 ---
 
 ## 🚀 Instalación y Uso
@@ -68,36 +67,43 @@ text
    ```bash
    git clone https://github.com/tu-usuario/matematicas-discretas-proyecto.git
    cd matematicas-discretas-proyecto
-Crear y activar ambiente virtual:
+### Crear y activar ambiente virtual:
 
-bash
-# Opción 1: Con conda (recomendado)
+#### Opción 1: Con conda (recomendado)
+   ```bash
 conda create -n matematicas-discretas python=3.9
 conda activate matematicas-discretas
-
-# Opción 2: Con venv
+```
+#### Opción 2: Con venv
+   ```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
-Instalar dependencias:
+venv\Scripts\activate  # Windows
+```
 
-bash
+### Instalar dependencias:
+
+```bash
 pip install -r requirements.txt
 Ejecutar la aplicación
 Interfaz interactiva:
+```
 
-bash
+```bash
 streamlit run app.py
-Ejecutar experimentos:
+```
+### Ejecutar experimentos:
 
-bash
+```bash
 python src/experiments/run_experiments.py
-Generar reportes:
+```
+### Generar reportes:
 
-bash
+```bash
 python src/visualization/generate_report.py
-📊 Experimentos
-Configuración experimental
+```
+## 📊 Experimentos
+### Configuración experimental
 Tamaños de grafo: 100, 500, 1000 nodos
 
 Pares origen-destino: 10 pares por tamaño (cortos, medios, largos)
@@ -106,29 +112,30 @@ Repeticiones: 3 ejecuciones por caso
 
 Métricas: Tiempo, expansiones, longitud de ruta, memoria
 
-Ejecutar todos los experimentos
-bash
+### Ejecutar todos los experimentos
+```bash
 python src/experiments/main.py
-👥 Integrantes del Equipo
+```
+## 👥 Integrantes del Equipo
 Nombre	Rol	Responsabilidades
 [Nombre 1]	Especialista en Grafos	Generación de datos, validación
 [Nombre 2]	Implementador de Algoritmos	Dijkstra, A*, Dijkstra Bidireccional
 [Nombre 3]	Experimento y Métricas	Scripts de experimentación, mediciones
-[Nombre 4]	Visualización y Reporte	Interfaz, gráficas, documentación
-📈 Resultados Clave
+[Bruno Tarango Garay]	Visualización y Reporte	Interfaz, gráficas, documentación
+## 📈 Resultados Clave
 (Esta sección se completará con los hallazgos del proyecto)
 
-Comparación de Tiempos de Ejecución
+### Comparación de Tiempos de Ejecución
 Algoritmo	Grafo 100 nodos	Grafo 500 nodos	Grafo 1000 nodos
 Dijkstra	-	-	-
 A*	-	-	-
 Bidireccional	-	-	-
-🔬 Análisis de Complejidad
+## 🔬 Análisis de Complejidad
 Algoritmo	Complejidad Teórica	Observado Experimentalmente
 Dijkstra	O((V+E) log V)	-
 A*	O((V+E) log V)	-
 Bidireccional	O((V+E) log V)	-
-🎮 Características de la Interfaz
+## 🎮 Características de la Interfaz
 Generación de grafos en tiempo real
 
 Selección interactiva de nodos origen y destino
@@ -139,56 +146,8 @@ Comparación side-by-side de algoritmos
 
 Exportación de resultados a CSV
 
-📝 Entregables
-✅ Código fuente completo
-
-✅ Scripts de experimentación
-
-✅ Reporte PDF con análisis
-
-✅ Presentación de 15 minutos
-
-✅ Manual de usuario
-
-📅 Cronograma
-Fecha	Hito
-Nov 18-20	Implementación y experimentos
-Nov 21-22	Análisis y reporte
-Nov 23	Revisión final
-Nov 24	Entrega del reporte
-Nov 26	Presentación
-🤝 Contribuciones
+## 🤝 Contribuciones
 Este proyecto es académico. Para sugerencias o issues, por favor contactar a los desarrolladores.
 
-📜 Licencia
+## 📜 Licencia
 Este proyecto es con fines educativos. Desarrollado para la clase de Matemáticas Discretas, Otoño 2025.
-
-📞 Contacto
-Equipo de Desarrollo
-
-Email: [email del equipo]
-
-Repositorio: [URL del GitHub]
-
-Curso: Matemáticas Discretas - Otoño 2025
-
-text
-
-## 💡 **Para personalizar este README:**
-
-1. **Reemplaza** `[Nombre X]` con los nombres reales de tu equipo
-2. **Actualiza** los enlaces de GitHub y contacto
-3. **Añade** cualquier información específica de tu implementación
-4. **Completa** la sección de resultados cuando tengas los datos
-
-## 🚀 **Próximos pasos con Git:**
-
-```bash
-# Inicializar repositorio (si no lo has hecho)
-git init
-git add .
-git commit -m "Initial commit: Project structure and README"
-
-# Conectar con GitHub (opcional)
-git remote add origin https://github.com/tu-usuario/matematicas-discretas-proyecto.git
-git push -u origin main
