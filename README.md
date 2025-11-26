@@ -41,15 +41,16 @@ El sistema evalúa métricas como tiempo de ejecución, número de nodos expandi
 ## 📁 Estructura del Proyecto
 ```text
 matematicas-discretas/
-├── data/               # Datos de grafos y resultados
-├── docs/               # Documentación
+├── data/                  # Datos de grafos y resultados
+├── resutls/               # Resultados
 ├── src/
-│   ├── algorithms/     # Implementación de algoritmos
-│   ├── experiments/    # Scripts de experimentación
-│   ├── visualization/  # Código de visualización
-│   └── utils/          # Utilidades comunes
-├── tests/              # Pruebas unitarias
+│   ├── __init__.py          
+│   ├── algorithms.py         # Implementación de algoritmos
+│   ├── experiment_runner.py  # Scripts de experimentación
+│   ├── visualization.py      # Código de visualización
+│   └── graph_creator.py      # Código encargado de generar los grafos
 ├── app.py              # Aplicación principal Streamlit
+├── run_experiments.py  # Integración de los modulos
 ├── requirements.txt    # Dependencias
 └── README.md
 ```
