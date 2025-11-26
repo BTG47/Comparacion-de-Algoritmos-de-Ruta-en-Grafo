@@ -2,7 +2,7 @@
 
 **Proyecto de Matemáticas Discretas - Otoño 2025**  
 *Sistema experimental para comparar algoritmos de búsqueda de rutas en grafos ponderados*
-
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://comparacion-de-algoritmos-de-ruta-en-grafo-d9tv4jmepazmwp7pfvl.streamlit.app/)
 ---
 
 ## 📋 Descripción del Proyecto
@@ -104,48 +104,54 @@ python src/experiments/run_experiments.py
 python src/visualization/generate_report.py
 ```
 ## 📊 Experimentos
-### Configuración experimental
-Tamaños de grafo: 100, 500, 1000 nodos
+### Tiempo Promedio de Ejecución (segundos)
+| Algoritmo       | 100 nodos | 200 nodos | 300 nodos | 400 nodos | 500 nodos |
+|-----------------|-----------|-----------|-----------|-----------|-----------|
+| A*              | 0.000803  | 0.002209  | 0.002502  | 0.002777  | 0.003478  |
+| Bidireccional   | 0.004902  | 0.041850  | 0.100776  | 0.140725  | 0.230989  |
+| Dijkstra        | 0.001028  | 0.008705  | 0.017859  | 0.031198  | 0.046727  |
 
-Pares origen-destino: 10 pares por tamaño (cortos, medios, largos)
+### Nodos Expandidos Promedio
+| Algoritmo       | 100 nodos | 200 nodos | 300 nodos | 400 nodos | 500 nodos |
+|-----------------|-----------|-----------|-----------|-----------|-----------|
+| A*              | 24.04     | 14.90     | 9.96      | 11.34     | 12.68     |
+| Bidireccional   | 249.28    | 622.64    | 1104.00   | 1551.40   | 2091.16   |
+| Dijkstra        | 73.24     | 166.48    | 235.94    | 421.38    | 530.74    |
 
-Repeticiones: 3 ejecuciones por caso
+### Uso de Memoria Promedio (KB)
+| Algoritmo       | 100 nodos | 200 nodos | 300 nodos | 400 nodos | 500 nodos |
+|-----------------|-----------|-----------|-----------|-----------|-----------|
+| A*              | 13.95     | 29.28     | 33.48     | 60.37     | 64.75     |
+| Bidireccional   | 23.44     | 50.08     | 56.78     | 104.20    | 111.04    |
+| Dijkstra        | 8.96      | 20.92     | 26.11     | 45.13     | 52.30     |
 
-Métricas: Tiempo, expansiones, longitud de ruta, memoria
-
-### Ejecutar todos los experimentos
-```bash
-python src/experiments/main.py
-```
-## 👥 Integrantes del Equipo
-Nombre	Rol	Responsabilidades
-[Axel Jesús Chávez Hernández]	Especialista en Grafos	Generación de datos, validación
-[Daniel de Jesús Martínez Gallegos]	Implementador de Algoritmos	Dijkstra, A*, Dijkstra Bidireccional
-[Diego Camargo Padilla]	Experimento y Métricas	Scripts de experimentación, mediciones
-[Bruno Tarango Garay]	Visualización y Reporte	Interfaz, gráficas, documentación
-## 📈 Resultados Clave
-(Esta sección se completará con los hallazgos del proyecto)
-
-### Comparación de Tiempos de Ejecución
-Algoritmo	Grafo 100 nodos	Grafo 500 nodos	Grafo 1000 nodos
-Dijkstra	-	-	-
-A*	-	-	-
-Bidireccional	-	-	-
 ## 🔬 Análisis de Complejidad
-Algoritmo	Complejidad Teórica	Observado Experimentalmente
-Dijkstra	O((V+E) log V)	-
-A*	O((V+E) log V)	-
-Bidireccional	O((V+E) log V)	-
-## 🎮 Características de la Interfaz
-Generación de grafos en tiempo real
+| Algoritmo       | Complejidad Teórica | Observaciones Experimentales |
+|-----------------|---------------------|------------------------------|
+| Dijkstra        | O((V+E) log V)      | Tiempo crece linealmente con el tamaño del grafo |
+| A*              | O((V+E) log V)      | Más eficiente con buena heurística, menos nodos expandidos |
+| Bidireccional   | O((V+E) log V)      | Mayor overhead pero mejor escalabilidad en grafos grandes |
 
-Selección interactiva de nodos origen y destino
+## 👥 Integrantes del Equipo
+| Nombre                           | Rol                      | Responsabilidades |
+|----------------------------------|--------------------------|-------------------|
+| Axel Jesús Chávez Hernández      | Especialista en Grafos   | Generación de datos, validación |
+| Daniel de Jesús Martínez Gallegos| Implementador de Algoritmos | Dijkstra, A*, Dijkstra Bidireccional |
+| Diego Camargo Padilla            | Experimento y Métricas   | Scripts de experimentación, mediciones |
+| Bruno Tarango Garay              | Visualización y Reporte  | Interfaz, gráficas, documentación |
 
-Visualización de rutas con pyvis
+## 🎮 Características de la Aplicación
+- Generación de grafos en tiempo real con parámetros personalizables
+- Carga de archivos CSV con grafos preexistentes
+- Selección interactiva de nodos origen y destino
+- Visualización de rutas con pyvis (grafos interactivos)
+- Comparación side-by-side de algoritmos
+- Exportación de resultados a CSV
+- Métricas en tiempo real: tiempo, expansiones, distancia, memoria
 
-Comparación side-by-side de algoritmos
-
-Exportación de resultados a CSV
+## 🚀 Demo en Línea
+La aplicación está disponible en:
+https://comparacion-de-algoritmos-de-ruta-en-grafo-d9tv4jmepazmwp7pfvl.streamlit.app/
 
 ## 🤝 Contribuciones
 Este proyecto es académico. Para sugerencias o issues, por favor contactar a los desarrolladores.
