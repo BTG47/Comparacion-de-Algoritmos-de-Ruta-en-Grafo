@@ -119,9 +119,9 @@ python src/experiments/main.py
 ```
 ## 👥 Integrantes del Equipo
 Nombre	Rol	Responsabilidades
-[Nombre 1]	Especialista en Grafos	Generación de datos, validación
-[Nombre 2]	Implementador de Algoritmos	Dijkstra, A*, Dijkstra Bidireccional
-[Nombre 3]	Experimento y Métricas	Scripts de experimentación, mediciones
+[Axel Jesús Chávez Hernández]	Especialista en Grafos	Generación de datos, validación
+[Daniel de Jesús Martínez Gallegos]	Implementador de Algoritmos	Dijkstra, A*, Dijkstra Bidireccional
+[Diego Camargo Padilla]	Experimento y Métricas	Scripts de experimentación, mediciones
 [Bruno Tarango Garay]	Visualización y Reporte	Interfaz, gráficas, documentación
 ## 📈 Resultados Clave
 (Esta sección se completará con los hallazgos del proyecto)
