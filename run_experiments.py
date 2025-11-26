@@ -75,7 +75,7 @@ def main():
     print("=" * 40)
     
     try:
-        # Crear grafo un poco más grande
+        # Crear grafo 
         grafo = crear_grafo(30, 100, 25)
         
         # Ejecutar solo 2 casos para prueba rápida
@@ -87,8 +87,8 @@ def main():
         
         # Mostrar estadísticas
         estadisticas = calcular_estadisticas(df_resultados)
-        print("✅ Experimento completado")
-        print("\n📊 RESULTADOS:")
+        print("Experimento completado")
+        print("\nRESULTADOS:")
         print(estadisticas.to_string(index=False))
         
         # Gráfica simple
@@ -106,7 +106,7 @@ def main():
         print("\n🎯 ¡SISTEMA FUNCIONANDO CORRECTAMENTE!")
         
     except Exception as e:
-        print(f"❌ Error en experimento: {e}")
+        print(f"Error en experimento: {e}")
         import traceback
         traceback.print_exc()
 
